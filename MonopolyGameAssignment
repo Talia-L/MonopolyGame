@@ -1,0 +1,55 @@
+import java.util.Random;
+
+public class MonopolyDice 
+{
+	public static void main(String[] args) 
+	{
+		 int die1; 
+		 int die2;
+	     
+		 Random randomthings = new Random(); 
+	        
+	        for (int i=1; i<=100; i++);
+	        	{
+	        		die1 = 1 + randomthings.nextInt(6);
+	        		die2 = 1 + randomthings.nextInt(6);
+	        	
+	        		System.out.println("User rolled a " +die1+ " & " +die2);
+	        	}
+	       
+	        if(die1!=die2)
+	        	{
+	        		System.out.println("Move " +(die1+die2) + " spaces and stop.");
+	        	}
+	        
+	        else
+	        	{
+	        		System.out.println("USER ROLLED DOUBLES!");  
+	        		System.out.println("Move " +(die1+die2)+ " spaces and roll again...");   
+	        		
+	        		die1 = 1 + randomthings.nextInt(6);
+	        		die2 = 1 + randomthings.nextInt(6);
+	        		
+	        		System.out.println("User rolled a " +die1+ " & " + die2);  
+	        		System.out.println("Move " +(die1+die2)+ " spaces and stop.");   
+
+	 	   if(die1==die2)
+	 	   	{ 
+	 		   		System.out.println("USER ROLLED DOUBLES!");  
+	 		  
+	 		   		System.out.println("Move " + (die1+die2) + " spaces and roll again...");   
+	        	
+	 		   		die1 = 1 + randomthings.nextInt(6);
+	 		   		die2 = 1 + randomthings.nextInt(6); 
+	 	        
+	 		   		System.out.println("User rolled a " +die1+ " & " +die2);
+	 		   		System.out.println("Move " + (die1+die2) + " spaces and stop.");
+	 	        	
+	 	   if(die1==die2)
+	 	        {  
+	 	        	System.out.println("GO TO JAIL --->");	 
+	 	        }
+	        }
+      	}
+     }   
+}
